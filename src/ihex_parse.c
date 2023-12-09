@@ -30,6 +30,7 @@
 #include <fcntl.h>
 #ifdef _WIN64
 #include <io.h>
+typedef __int64 ssize_t;
 #else
 #include <unistd.h>
 #endif
