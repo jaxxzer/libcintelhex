@@ -28,7 +28,11 @@
 
 #include <stdio.h>
 #include <fcntl.h>
+#ifdef _WIN64
+#include <io.h>
+#else
 #include <unistd.h>
+#endif
 #include <string.h>
 
 #include <sys/stat.h>
